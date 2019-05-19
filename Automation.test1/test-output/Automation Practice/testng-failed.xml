@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Automation Practice]">
+  <listeners>
+    <listener class-name="com.ap.ui.ExtentReportListeners.ExtentReporter"/>
+  </listeners>
+  <test name="Automation Practice App Test Cases(failed)">
+    <classes>
+      <class name="com.ap.ui.testcase.LoginTest">
+        <methods>
+          <include name="loginTest"/>
+          <include name="closeBrowser"/>
+          <include name="setUpdriver"/>
+          <include name="apLogoTest"/>
+          <include name="loginPageTitleTest"/>
+        </methods>
+      </class> <!-- com.ap.ui.testcase.LoginTest -->
+      <class name="com.ap.ui.testcase.ContactTest">
+        <methods>
+          <include name="testContact"/>
+          <include name="tearDown"/>
+          <include name="setUpdriver"/>
+        </methods>
+      </class> <!-- com.ap.ui.testcase.ContactTest -->
+      <class name="com.ap.ui.testcase.AddWishlistTest">
+        <methods>
+          <include name="setUpdriver"/>
+          <include name="testAddProductToWishList"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.ap.ui.testcase.AddWishlistTest -->
+      <class name="com.ap.ui.testcase.SearchItemTest">
+        <methods>
+          <include name="testSearchItem"/>
+          <include name="tearDown"/>
+          <include name="setUpdriver"/>
+        </methods>
+      </class> <!-- com.ap.ui.testcase.SearchItemTest -->
+    </classes>
+  </test> <!-- Automation Practice App Test Cases(failed) -->
+</suite> <!-- Failed suite [Automation Practice] -->
